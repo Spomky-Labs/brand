@@ -1,0 +1,615 @@
+{
+  "$description": "Slabs design tokens, brand guidelines v2.0 (October 2026). Format: W3C Design Tokens Community Group. Source: Charte Graphique.pdf.",
+  "color": {
+    "brand": {
+      "anthracite": {
+        "$type": "color",
+        "$value": "#333334",
+        "$description": "Logo, text, dark grounds. CMYK 70 60 55 75. Pantone Black 7 C / Neutral Black U."
+      },
+      "beton": {
+        "$type": "color",
+        "$value": "#B3AEA6",
+        "$description": "Secondary grounds, rules, text on dark. CMYK 30 25 30 10. Pantone Warm Gray 4 C / Warm Gray 4 U."
+      },
+      "calcaire": {
+        "$type": "color",
+        "$value": "#F5F1E8",
+        "$description": "Light grounds, logo on dark. CMYK 5 5 10 0. No spot color."
+      },
+      "orange": {
+        "$type": "color",
+        "$value": "#ED6A20",
+        "$description": "Signal orange: the cursor, the slab, the main action. Never text on light, never a text background, no tint. CMYK 0 70 100 0. Pantone 7578 C / 152 U."
+      }
+    },
+    "complementary": {
+      "acier": {
+        "$type": "color",
+        "$value": "#4A5D6E",
+        "$description": "Information, notes, neutral data series. CMYK 60 35 20 55. Small surfaces, always with a word."
+      },
+      "patine": {
+        "$type": "color",
+        "$value": "#3E7268",
+        "$description": "Success, validation, second data series. CMYK 60 0 40 55."
+      },
+      "brique": {
+        "$type": "color",
+        "$value": "#A6452C",
+        "$description": "Errors, alerts, negative values. Never a button. CMYK 25 85 95 20."
+      }
+    },
+    "utility": {
+      "schiste": {
+        "$type": "color",
+        "$value": "#5E5B56",
+        "$description": "Secondary text, link underline, field borders. CMYK 45 40 40 55 or K 80."
+      },
+      "calcaire-clair": {
+        "$type": "color",
+        "$value": "#FBF9F4",
+        "$description": "Cards, panels, menus, state notes."
+      },
+      "calcaire-ombre": {
+        "$type": "color",
+        "$value": "#ECE7DD",
+        "$description": "Notes, tags, inline code, disabled controls."
+      },
+      "platre": {
+        "$type": "color",
+        "$value": "#DCD5C6",
+        "$description": "Rules on light grounds; types and properties in code."
+      },
+      "sable": {
+        "$type": "color",
+        "$value": "#E8C9A8",
+        "$description": "Strings and numbers in code on Anthracite only. Screen only."
+      }
+    },
+    "series": {
+      "1": {
+        "$type": "color",
+        "$value": "{color.brand.orange}",
+        "$description": "The series the chart is about. One at most."
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{color.brand.anthracite}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{color.complementary.acier}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{color.complementary.patine}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{color.utility.schiste}"
+      },
+      "negative": {
+        "$type": "color",
+        "$value": "{color.complementary.brique}",
+        "$description": "Negative values or alerts only."
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "sans": {
+        "$type": "fontFamily",
+        "$value": [
+          "Space Grotesk",
+          "Arial",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "Consolas",
+          "monospace"
+        ],
+        "$description": "Weights 400 and 600 only on the web."
+      },
+      "logotype": {
+        "$type": "fontFamily",
+        "$value": [
+          "Yanone Kaffeesatz"
+        ],
+        "$description": "Logotype only, drawn into the logo files. Never for text."
+      }
+    },
+    "weight": {
+      "light": {
+        "$type": "number",
+        "$value": 300
+      },
+      "regular": {
+        "$type": "number",
+        "$value": 400
+      },
+      "medium": {
+        "$type": "number",
+        "$value": 500
+      },
+      "semibold": {
+        "$type": "number",
+        "$value": 600
+      },
+      "bold": {
+        "$type": "number",
+        "$value": 700
+      }
+    }
+  },
+  "typography": {
+    "web": {
+      "h1": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 42,
+            "unit": "px"
+          }
+        },
+        "size-mobile": {
+          "$type": "dimension",
+          "$value": {
+            "value": 32,
+            "unit": "px"
+          }
+        },
+        "line-height": {
+          "$type": "number",
+          "$value": 1.1
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 700
+        },
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{font.family.sans}"
+        }
+      },
+      "h2": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 32,
+            "unit": "px"
+          }
+        },
+        "size-mobile": {
+          "$type": "dimension",
+          "$value": {
+            "value": 26,
+            "unit": "px"
+          }
+        },
+        "line-height": {
+          "$type": "number",
+          "$value": 1.2
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 700
+        },
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{font.family.sans}"
+        }
+      },
+      "h3": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 26,
+            "unit": "px"
+          }
+        },
+        "size-mobile": {
+          "$type": "dimension",
+          "$value": {
+            "value": 22,
+            "unit": "px"
+          }
+        },
+        "line-height": {
+          "$type": "number",
+          "$value": 1.3
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 600
+        },
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{font.family.sans}"
+        }
+      },
+      "h4": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 22,
+            "unit": "px"
+          }
+        },
+        "size-mobile": {
+          "$type": "dimension",
+          "$value": {
+            "value": 18,
+            "unit": "px"
+          }
+        },
+        "line-height": {
+          "$type": "number",
+          "$value": 1.4
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 600
+        },
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{font.family.sans}"
+        }
+      },
+      "h5": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 15,
+            "unit": "px"
+          }
+        },
+        "size-mobile": {
+          "$type": "dimension",
+          "$value": {
+            "value": 14,
+            "unit": "px"
+          }
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 600
+        },
+        "tracking": {
+          "$type": "number",
+          "$value": 0.08,
+          "$description": "em, capitals"
+        },
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{font.family.mono}"
+        }
+      },
+      "h6": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 13,
+            "unit": "px"
+          }
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 600
+        },
+        "tracking": {
+          "$type": "number",
+          "$value": 0.12,
+          "$description": "em, capitals"
+        },
+        "family": {
+          "$type": "fontFamily",
+          "$value": "{font.family.mono}"
+        }
+      },
+      "body-reading": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 18,
+            "unit": "px"
+          }
+        },
+        "size-mobile": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          }
+        },
+        "line-height": {
+          "$type": "number",
+          "$value": 1.6
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 400
+        }
+      },
+      "body": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          }
+        },
+        "line-height": {
+          "$type": "number",
+          "$value": 1.5
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 400
+        }
+      },
+      "code": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 14,
+            "unit": "px"
+          }
+        },
+        "line-height": {
+          "$type": "number",
+          "$value": 1.55
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 400
+        }
+      },
+      "caption": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 12,
+            "unit": "px"
+          }
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 400
+        }
+      },
+      "label": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 12,
+            "unit": "px"
+          }
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 600
+        },
+        "tracking": {
+          "$type": "number",
+          "$value": 0.12,
+          "$description": "em, capitals"
+        }
+      },
+      "nav": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 15,
+            "unit": "px"
+          }
+        },
+        "weight": {
+          "$type": "number",
+          "$value": 500
+        }
+      }
+    },
+    "document": {
+      "display": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 96,
+            "unit": "px"
+          },
+          "$description": "96 px and more, Light 300, uppercase, covers"
+        }
+      },
+      "page-title": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 30,
+            "unit": "px"
+          },
+          "$description": "Bold 700, uppercase, followed by the slab"
+        }
+      },
+      "heading": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 22,
+            "unit": "px"
+          },
+          "$description": "SemiBold 600"
+        }
+      },
+      "body": {
+        "size": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Regular 400, line height 1.5, 1.6 for long reading"
+        }
+      }
+    }
+  },
+  "layout": {
+    "content-max": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1200,
+        "unit": "px"
+      },
+      "$description": "Measured in the frame: the window minus the side band."
+    },
+    "reading-max": {
+      "$type": "dimension",
+      "$value": {
+        "value": 864,
+        "unit": "px"
+      },
+      "$description": "About 80 characters, at least 72 % of the content area."
+    },
+    "side-band": {
+      "$type": "dimension",
+      "$value": {
+        "value": 288,
+        "unit": "px"
+      }
+    },
+    "gutter": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "gutter-mobile": {
+      "$type": "dimension",
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "space-base": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      },
+      "$description": "Spacing in multiples of 4 px, from 4 to 96 px."
+    },
+    "space-max": {
+      "$type": "dimension",
+      "$value": {
+        "value": 96,
+        "unit": "px"
+      }
+    },
+    "breakpoint": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 640,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1024,
+          "unit": "px"
+        }
+      },
+      "side-band": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1100,
+          "unit": "px"
+        },
+        "$description": "About; where the band and a 720 px reading column stop fitting."
+      }
+    },
+    "header-logo-height": {
+      "$type": "dimension",
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      }
+    }
+  },
+  "radius": {
+    "card": {
+      "$type": "dimension",
+      "$value": {
+        "value": 6,
+        "unit": "px"
+      }
+    },
+    "control": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    }
+  },
+  "border": {
+    "link-underline": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      },
+      "$description": "Schiste; 2 px orange on hover and active."
+    },
+    "focus": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      },
+      "$description": "Anthracite on light grounds, orange on dark, offset 2 px."
+    },
+    "field": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      },
+      "$description": "Schiste; 2 px Brique in error."
+    }
+  },
+  "icon": {
+    "size": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "stroke": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      }
+    }
+  },
+  "slab": {
+    "height-ratio": {
+      "$type": "number",
+      "$value": 0.25,
+      "$description": "Of the title size."
+    },
+    "width-ratio": {
+      "$type": "number",
+      "$value": 1.2,
+      "$description": "Of the title size."
+    }
+  }
+}

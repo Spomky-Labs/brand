@@ -1,0 +1,14 @@
+{
+  "name": "Slabs",
+  "short_name": "Slabs",
+  "description": "Open-source security libraries for PHP.",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#333334",
+  "background_color": "#F5F1E8",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

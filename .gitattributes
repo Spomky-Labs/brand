@@ -1,0 +1,19 @@
+* text=auto
+
+*.md       text eol=lf
+*.svg      text eol=lf
+*.html     text eol=lf
+*.txt      text eol=lf
+*.webmanifest text eol=lf
+
+*.png      binary
+*.jpg      binary
+*.ico      binary
+*.pdf      binary
+*.eps      binary
+*.ttf      binary
+*.potx     binary
+*.pptx     binary
+
+# Les textes de licence restent tels que livres en amont
+OFL.txt    -text
